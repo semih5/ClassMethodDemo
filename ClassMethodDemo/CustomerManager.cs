@@ -5,7 +5,7 @@ using System.Text;
 namespace ClassMethodDemo
 {
     class CustomerManager
-    {     //
+    {     
         public void CustomerList(Customer customer)
         {
             Console.WriteLine("Customer List: "+"\n"+"Id: "+ customer.Id+". "+"Name :"+customer.CustomerName+". "+"Balance: "+customer.Balance);
