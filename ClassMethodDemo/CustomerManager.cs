@@ -5,10 +5,10 @@ using System.Text;
 namespace ClassMethodDemo
 {
     class CustomerManager
-    {        
+    {     //
         public void CustomerList(Customer customer)
         {
-            Console.WriteLine("Cutomer List: "+Environment.NewLine+"Id: "+ customer.Id+". "+"Name :"+customer.CustomerName+". "+"Balance: "+customer.Balance);
+            Console.WriteLine("Customer List: "+"\n"+"Id: "+ customer.Id+". "+"Name :"+customer.CustomerName+". "+"Balance: "+customer.Balance);
         }
         public void AddCustomer(Customer customer)
         {

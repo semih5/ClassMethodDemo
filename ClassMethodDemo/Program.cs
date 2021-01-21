@@ -26,10 +26,36 @@ namespace ClassMethodDemo
                 customer1,customer2,customer3
             };
 
-            
+
+            // Getting the customer list.
+            for (int i = 0; i < customers.Length; i++)
+            {
+                Console.WriteLine("Customer Name: " + customers[i].CustomerName + ". " + "Customer ID: " + customers[i].Id + "." + "\n");
+            }
+
+            // An alternative way to getting the customer list.
+            //foreach (var customer in customers)
+            //{
+            //    Console.WriteLine("Customer Name: "+customer.CustomerName+". "+"Customer ID: "+customer.Id+"."+"\n");
+            //}
+
+            CustomerManager CustomerManager = new CustomerManager();
 
 
+            Console.WriteLine("--------------------");
+
+            //Add Customer
+            CustomerManager.AddCustomer(customer1);
+            Console.WriteLine("--------------------");
+
+            //Delete Customer
+            CustomerManager.DeleteCustomer(customer2);
+            Console.WriteLine("--------------------");
+
+            //List Customer
+            CustomerManager.CustomerList(customer3);
             
+
         }
     }
 }
