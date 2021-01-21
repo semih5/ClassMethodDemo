@@ -6,7 +6,30 @@ namespace ClassMethodDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Customer customer1 = new Customer();
+            customer1.Id = 001;
+            customer1.CustomerName = "Semih";
+            customer1.Balance = 1200;
+
+            Customer customer2 = new Customer();
+            customer2.Id = 002;
+            customer2.CustomerName = "Customer2";
+            customer2.Balance = 3000;
+
+            Customer customer3 = new Customer();
+            customer3.Id = 003;
+            customer3.CustomerName = "Customer3";
+            customer3.Balance = 1234;
+
+            Customer[] customers = new Customer[]
+            {
+                customer1,customer2,customer3
+            };
+
+            
+
+
+            
         }
     }
 }
